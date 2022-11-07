@@ -1,7 +1,7 @@
 # !/usr/bin/env bash
 # File: guessinggame.sh
 
-nbfiles=5
+nbfiles=$(find . -maxdepth 1 -type f | wc -l)
 
 function strict_compare {
 if [[ $1 -gt $2 ]]
